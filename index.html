@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweetlyn Julia | Portfolio</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', Arial, sans-serif;
+      background: #f9fafb;
+      color: #111827;
+    }
+    header {
+      background: rgb(0,71,171);
+background: linear-gradient(159deg, rgba(0,71,171,1) 0%, rgba(28,169,201,1) 100%);
+      color: rgb(181, 231, 248);
+      padding: 80px 20px;
+      text-align: center;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid white;
+      margin-bottom: 20px;
+    }
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+    h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      position: relative;
+    }
+    h2::after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      background: #6366f1;
+      display: block;
+      margin-top: 10px;
+      border-radius: 4px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    }
+    .skills span {
+      display: inline-block;
+      padding: 10px 16px;
+      margin: 6px;
+      background: #eef2ff;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .project-img {
+      width: 100%;
+      border-radius: 14px;
+      margin-bottom: 15px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      background: #dcfce7;
+      color: #166534;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    footer {
+      background: #111827;
+      color: #9ca3af;
+      text-align: center;
+      padding: 30px 20px;
+    }
+      body.dark { background:#0b1220; color:#e5e7eb; }
+    body.dark header{background:linear-gradient(135deg,#0f172a,#020617)}
+    body.dark .card{background:#020617;color:#e5e7eb}
+    body.dark footer{background:#020617}
+    .dark-toggle{position:fixed;top:20px;right:20px;background:#111827;color:white;border:none;border-radius:999px;padding:10px 14px;cursor:pointer;font-size:16px}
+  </style>
+</head>
+<body>
+<button class="dark-toggle" onclick="toggleDark()">🌙</button>
+
+<header>
+  
+  <h1>Sweetlyn Julia P</h1>
+  <p>B.E. Computer Science Engineering Student</p>
+  <p>AI • Exploring Software Development • Data Analytics</p>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <div class="card">
+    <p>I am a B.E. Computer Science Engineering student with a keen interest in software development, artificial intelligence, and data analytics. I have completed an internship at VOIS, gaining exposure to real-world workflows and collaborative projects. Through academic and personal projects, I am learning to apply programming and data skills to practical problems. I enjoy exploring new technologies and continuously improving my technical knowledge.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Technical Skills</h2>
+  <div class="card skills">
+    <span>Java</span><span>Python</span><span>C</span><span>C++</span>
+    <span>SQL</span><span>MySQL</span><span>Excel</span>
+    <span>Artificial Intelligence</span><span>Machine Learning</span>
+    <span>Data Structures</span><span>OOP</span>
+    <span>HTML</span><span>CSS</span>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="image.png" class="project-img" alt="CNN Project">
+      <span class="badge">AI / ML</span>
+      <h3>Waste Segregation using CNN</h3>
+      <p>Designed and trained a Convolutional Neural Network to classify degradable and non-degradable waste from images, supporting sustainable waste management.</p>
+      <p><strong>Tech:</strong> Python, CNN, Image Processing</p>
+    </div>
+
+    <div class="card">
+      <img src="WhatsApp Image 2025-12-29 at 3.09.27 PM.jpeg" class="project-img" alt="Plant Diary">
+      <span class="badge">Java</span>
+      <h3>Plant Diary Application</h3>
+      <p>Developed a Java Swing desktop application to record, manage, and view plant details using an intuitive GUI.</p>
+      <p><strong>Tech:</strong> Java, Swing</p>
+    </div>
+
+    <div class="card">
+      <img src="image (1).png" class="project-img" alt="Data Analysis">
+      <span class="badge">Data Analytics</span>
+      <h3>Data Cleaning & Analysis</h3>
+      <p>Cleaned and analyzed datasets to extract insights, trends, and patterns using analytical tools.</p>
+      <p><strong>Tech:</strong> Python, SQL, Excel</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Internship</h2>
+  <div class="card">
+    <h3>VOIS – Vodafone Intelligent Solutions</h3>
+    <p>Completed an industry internship gaining practical exposure to programming, data handling, and professional workflows in a corporate environment.</p>
+  </div>
+</section>
+
+
+
+<section>
+  <h2>Certificates</h2>
+  <div class="grid">
+    <div class="card"><img src="WhatsApp Image 2025-12-29 at 3.33.32 PM.jpeg" class="project-img"><p>Python Certification</p></div>
+    <div class="card"><img src="WhatsApp Image 2025-12-29 at 3.32.22 PM.jpeg" class="project-img"><p>Internship Certificate</p></div>
+    <div class="card"><img src="WhatsApp Image 2025-12-29 at 3.25.56 PM.jpeg" class="project-img"><p>Java Certification</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <div class="card">
+    <p><strong>Email:</strong> sweetlynjuliapj006@gmail.com</p>
+    <p><strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/p-sweetlyn-julia-2208b032b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">P Sweetlyn Julia</a> </p>
+    <p><strong>GitHub:</strong><a href="https://github.com/Sweetlyn489">Sweetlyn489</a> </p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Sweetlyn Julia • Portfolio</p>
+</footer>
+
+<script>
+function toggleDark(){document.body.classList.toggle('dark');}
+</script>
+</body>
+</html>
